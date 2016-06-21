@@ -30,7 +30,7 @@ app.controller('chatCtrl', ['$scope', '$firebase', function($scope, $firebase) {
     var name = prompt("Enter your name: ", '');
     $scope.name = name;
     $scope.chatMessage = "";
-    var ref = new Firebase("https://redwolf0127.github.io");
+    var ref = new Firebase("https://koisonchat-9f6b0.firebaseapp.com");
     var sync = $firebase(ref);
     $scope.chatMessages = sync.$asArray();
     $scope.sendChat = function() {
